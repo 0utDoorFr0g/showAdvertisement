@@ -1,3 +1,5 @@
+Add-Type -AssemblyName PresentationCore,PresentationFramework
+
 $msgBody = "blabla is blabla"
 $msgTitle = "Question!"
 $msgButton = 'YesNoCancel'
