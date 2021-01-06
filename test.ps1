@@ -1,1 +1,1 @@
-#blablabla
+[System.Windows.MessageBox]::Show('test')
